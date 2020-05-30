@@ -102,7 +102,7 @@ syntax: ``@desc <description>``
 
 ``<description>`` supports markdown.
 
-Normally you don't need to use ``@desc``, because first section in doc comment is determined automatically as ``@desc``.
+Normally you don't need to use ``@desc``, because the first section in doc comment is automatically used as ``@desc``.
 
 ```javascript
 /**
@@ -158,7 +158,7 @@ syntax: ``@example <JavaScript>``
 class MyClass{...}
 ```
 
-And you can use ``<caption>...</caption>`` at first line.
+And you can use ``<caption>...</caption>`` on the first line.
 
 ```javascript
 /**
@@ -185,7 +185,7 @@ class MyClass{...}
 ### @ignore
 syntax: ``@ignore``
 
-The identifier is not displayed in document.
+The identifier is not displayed in the document.
 
 ```javascript
 /**
@@ -199,7 +199,7 @@ class MyClass{...}
 ### @link
 syntax: ``{@link <identifier>}``
 
-link other identifier
+Link to other identifier
 
 ```javascript
 /**
@@ -485,7 +485,7 @@ About ``<type>`` to see [Type Syntax](#type-syntax)
  */
 ```
 
-If ``<type>`` is Object, you can use ``@property <type> <name> [description]`` for each properties.
+If ``<type>`` is Object, you can use ``@property <type> <name> [description]`` for each property.
 
 ```javascript
 /**
@@ -651,7 +651,7 @@ function myFunc(param){...}
 ```
 
 ## Identifier Syntax
-``<identifier>`` supports following syntax.
+``<identifier>`` supports the following syntax.
 - class: ``MyClass``
 - method and member: ``MyClass#foo``
 - static method and member: ``MyClass.bar``
@@ -662,4 +662,3 @@ if same names in your project, you can use full identifier syntax. full identifi
 e.g. If ``MyClass`` in ``src/foo1.js`` and ``src/foo2.js``, you can write following,
 - ``src/foo1.js~MyClass``
 - ``src/foo2.js~MyClass``
-

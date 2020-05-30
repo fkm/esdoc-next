@@ -48,12 +48,12 @@ export default class Foo {
 ```
 
 ## ES Class
-ESDoc supports ES class syntax and targets codes that are written by it.
+ESDoc supports ES class syntax and targets code that is written in it.
 
-ES class syntax makes the clear relation of class, method, member, constructor and inheritance.<br/>
+ES class syntax understands the relation of class, method, member, constructor and inheritance.<br/>
 This means that ESDoc can generate a document without using a tag for these. In other words, you don't need to write tags for classes.
 
-ESDoc automatically generates the under contents by class syntax.
+ESDoc automatically generates the following contents by class syntax.
 
 - Super classes
 - Direct Subclasses and Indirect Subclasses.
@@ -67,30 +67,29 @@ ESDoc automatically generates the under contents by class syntax.
 Note: ESDoc doesn't support prototype base codes and function base codes.
 
 ## ES Module
-ESDoc supports ES modules syntax and targets codes that are written by it.<br/>
-ES modules syntax is file base. So ESDoc treats as one file = one module.
+ESDoc supports ES modules syntax and targets code that is written in it.<br/>
+ES modules syntax is file based. So ESDoc treats one file as one module.
 
-ESDoc displays a import style in accordance with the export style.
+ESDoc displays an import style in accordance with the export style.
 
 - If `export default class Foo{}`, displays `import Foo from './Foo.js'` in `Foo` class documentation.
 - If `export class Foo{}`, displays ``import {Foo} from './Foo.js'``in `Foo` class documentation.
 
-This is useful because you not need to see export style in source code.
+This is useful because you don't need to see export style in source code.
 
 <img src="./asset/image/feature/module1.png" class="screen-shot" width="500px">
 
-And you may as well as use [esdoc-importpath-plugin](https://github.com/esdoc/esdoc-plugins/tree/master/esdoc-importpath-plugin) to transform path.
+And you may also use [esdoc-importpath-plugin](https://github.com/esdoc/esdoc-plugins/tree/master/esdoc-importpath-plugin) to transform path.
 
 Note: ESDoc doesn't support commonjs.
 
 ## Plugin Architecture
-ESDoc adopts plugin architecture. So, almost all features are provided as plugins.
+ESDoc adopts a plugin architecture. So, almost all features are provided as plugins.
 
 Especially [esdoc-standard-plugin](https://github.com/esdoc/esdoc-plugins/tree/master/esdoc-standard-plugin) is a packaging plugin with major plugins.<br/>
 Normally we recommend using this plugin. There are various plugins in [esdoc/esdoc-plugins](https://github.com/esdoc/esdoc-plugins).
 
-You can easily make plugins, and there are many [third party plugins](https://www.npmjs.com/search?q=esdoc%20plugin&page=1&ranking=optimal).<br/>
-Please click [here](./api.html) for how to make plugins.
+You can easily [make your own plugins](./api.html), and there already are many [third party plugins](https://www.npmjs.com/search?q=esdoc%20plugin&page=1&ranking=optimal).
 
 ## Publish HTML
 ESDoc generates HTML documents that are easy to see and plain looks.
@@ -161,11 +160,11 @@ This is my project overview.
 <img src="./asset/image/feature/manual2.png" class="screen-shot" width="500px">
 
 ## Search Documentation
-ESDoc supports built-in searching in document with only JavaScript(without server implementation).
+ESDoc supports built-in searching in document with only JavaScript (without server implementation).
 
 The implementation of searching:
 
-- ESDoc made the index(JSON) at the time of document generation.
+- ESDoc made the index (JSON) at the time of document generation.
 - The user search from the index.
 
 <img src="./asset/image/feature/search1.png" class="screen-shot" width="500px">
@@ -181,4 +180,4 @@ The following variables are supported.
 - A property type using assignment value.
 - A return type using return value.
 
-Note: This implementation is very simple. So ESDoc infers only primitive values(number, boolean, string).
+Note: This implementation is very simple. So ESDoc infers only primitive values (number, boolean, string).

@@ -1,4 +1,4 @@
-# Migration to V1.0.0
+# Migration to v1.0.0
 ESDoc v1.0 adopts plugin architecture. So, almost all features are provided as plugins.<br/>
 Please change your config to load plugins.
 

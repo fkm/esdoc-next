@@ -13,9 +13,9 @@ Please <a href="https://try.esdoc.org">try it out</a>!
 # Features
 - Generates good documentation.
 - Measures documentation coverage.
-- Integrate test codes into documentation.
-- Integrate manual into documentation.
-- Parse ECMAScript proposals.
+- Integrates test codes into documentation.
+- Integrates manual into documentation.
+- Parses ECMAScript proposals.
 - [ESDoc Hosting Service](https://doc.esdoc.org)
 
 # Users
@@ -48,7 +48,7 @@ open ./docs/index.html
 ```
 
 # Document
-please visit [esdoc.org](https://esdoc.org) to see more documentation.
+Please visit [esdoc.org](https://esdoc.org) to see more documentation.
 
 # License
 MIT
