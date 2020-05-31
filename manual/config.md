@@ -36,7 +36,7 @@ Introduce config files of ESDoc with esdoc-standard-plugin.
 }
 ```
 
-And if use ``@test``, more better integration.
+You can use ``@test`` for even better integration.
 
 ```javascript
 /** @test {MyClass} */
@@ -132,7 +132,7 @@ describe('MyClass has foo bar feature', ()=>{
 | ``index`` | - | ``./README.md``| Includes file into index page of document |
 | ``package`` | - | ``./package.json`` | Use package.json info. |
 | ``plugins`` | - | ``null`` | If specified, use each plugins. To see [Plugin Feature](./api.html#plugin-feature) for more information. |
-| ``plugins[].name`` | true | - | Plugin module name(e.g. ``your-awesome-plugin``) or plugin file path(e.g. ``./your-awesome-plugin.js``). |
+| ``plugins[].name`` | true | - | Plugin module name (e.g. ``your-awesome-plugin``) or plugin file path (e.g. ``./your-awesome-plugin.js``). |
 | ``plugins[].option`` | - | null | If specified, the plugin get the option. |
 
 <br/>
@@ -142,7 +142,7 @@ describe('MyClass has foo bar feature', ()=>{
 | ----- | -------- | ------- | ----------- |
 | `lint.enable` | - | `true` | If specified, execute documentation lint. |
 | ``coverage.enable`` | - | ``true`` | If true, output document coverage. |
-| ``accessor.access`` | - | ``["public", "protected", "package", "private"]`` | Process only identifiers(class, method, etc...) that are have the access(public, protected, package, and private). |
+| ``accessor.access`` | - | ``["public", "protected", "package", "private"]`` | Process only identifiers (class, method, etc...) that are have the access (public, protected, package, and private). |
 | ``accessor.autoPrivate`` | - | ``true`` | Deal with identifiers beginning with "_" as a private. <br> e.g. ``this._foo`` is private. but ``/** @public */ this._foo`` is public.|
 | ``undocumentIdentifier.enable`` | - | ``true`` | If true, also process undocument Identifiers. <br> e.g. ``/** @foo bar */ class MyClass`` is document identifier, ``class MyClass`` is undocument identifier. |
 | ``unexportedIdentifier.enable`` | - | ``false`` | If true, also process unexported Identifiers. <br> e.g. ``export class MyClass`` is exported, ``class MyClass`` is not exported. |
@@ -156,7 +156,7 @@ describe('MyClass has foo bar feature', ()=>{
 | `brand.image` | - | - | If specified, write og tag and twitter card. |
 | ``manual.globalIndex`` | - | false | If specify true, ESDoc generates global index using the manual. In other words, it means to replace `config.index` to `config.manual.index` |
 | ``manual.index`` | - | null | If specify markdown file, show manual index using the file. |
-| ``manual.asset`` | - | null | if specify asset(image) directory path, include the directory into manual. |
+| ``manual.asset`` | - | null | if specify asset (image) directory path, include the directory into manual. |
 | ``manual.files`` | - | null | If specify markdown files, include manual into output. |
 | ``test.source`` | true | - | Test codes directory path. |
 | ``test.interfaces`` | | `["describe", "it", "context", "suite", "test"]` | Test code interfaces. |

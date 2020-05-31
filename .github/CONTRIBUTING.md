@@ -10,13 +10,13 @@ npm install
 ## Running Tests
 Quick run tests
 ```
-npm run test
+npm test
 ```
 
 You can see output documentation after runt tests.
 ```
 # see http://localhost:8080/test/fixture/dest/esdoc
-npm run start
+npm start
 ```
 
 ## Install From Head

@@ -1,12 +1,12 @@
 # API
 
-You can modify data(config, code, parser, AST, doc and content) at hook points with plugins.
+You can modify the data (config, code, parser, AST, doc and content) at hook points with plugins.
 
 ## Plugin API
 
-First, you set ``plugins`` property in config.
+First, you set the ``plugins`` property in the config.
 - specify directly JavaScript file (e.g. `./my-plugin.js`)
-- specify npm module name (e.g. `esdoc-foo-plugin`), before you need to install the module.
+- specify NPM module name (e.g. `esdoc-foo-plugin`), before you need to install the module.
 
 ```json
 {
@@ -91,4 +91,3 @@ Note: [esdoc/esdoc-plugins](https://github.com/esdoc/esdoc-plugins) is helpful f
 
 ## Data Format
 TODO: describe data format.
-

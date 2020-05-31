@@ -4,7 +4,7 @@
 - [Writing Tags](#writing-tags)
 
 ## Installation
-Install ESDoc and standard-plugin from npm.
+Install ESDoc and standard-plugin from the NPM registry.
 
 ```sh
 cd your-project/
@@ -33,7 +33,7 @@ ESDoc automatically finds the configuration file path by the order, if you don't
 3. `esdoc` property in `package.json`
 
 ## Writing Tags
-ESDoc supports some documentation tags(aka. jsdoc tags). All tags are [here](./tags.html).
+ESDoc supports some documentation tags (aka. jsdoc tags). All tags are [here](./tags.html).
 
 ```javascript
 /**
@@ -43,7 +43,7 @@ export default class MyClass {
   /**
    * @param {number} a - this is a value.
    * @param {number} b - this is a value.
-   * @return {number} result of the sum value.
+   * @return {number} the sum of a and b.
    */
   sum(a, b){
     return a + b;
@@ -56,4 +56,3 @@ And run ESDoc.
 ./node_modules/.bin/esdoc
 open ./docs/index.html
 ```
-
