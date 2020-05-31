@@ -1,7 +1,11 @@
 #!/usr/bin/env node
 const sh = require('./sh');
 
-sh.exec('./script/eslint.js');
+const NODE_MAJOR_VERSION = process.version.match(/^v(\d+)/)[1];
+
+if (parseInt(NODE_MAJOR_VERSION, 10) >= 8) {
+  sh.exec('./script/eslint.js');
+}
 
 sh.rm('./test/integration-test/out');
 const mochaOptions = [
