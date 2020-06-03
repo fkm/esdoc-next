@@ -111,6 +111,14 @@ export default class ESDocCLI {
       // ignore
     }
 
+    try {
+      const filePath = path.resolve('./esdoc.config.js');
+      fs.readFileSync(filePath);
+      return filePath;
+    } catch (e) {
+      // ignore
+    }
+
     return null;
   }
 

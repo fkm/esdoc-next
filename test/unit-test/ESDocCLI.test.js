@@ -47,5 +47,14 @@ describe('test ESDocCLI:', ()=>{
       fs.unlinkSync('.esdoc.js');
       process.chdir('../');
     });
+
+    it('finds esdoc.config.js', ()=>{
+      process.chdir('./test/');
+      fs.writeFileSync('esdoc.config.js', 'dummy');
+      const cli = new ESDocCLI([null, null]);
+      assert.equal(cli._findConfigFilePath(), path.resolve('esdoc.config.js'));
+      fs.unlinkSync('esdoc.config.js');
+      process.chdir('../');
+    });
   });
 });
