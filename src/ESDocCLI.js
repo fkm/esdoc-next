@@ -95,20 +95,16 @@ export default class ESDocCLI {
       return this._argv.c;
     }
 
-    try {
-      const filePath = path.resolve('./.esdoc.json');
-      fs.readFileSync(filePath);
-      return filePath;
-    } catch (e) {
-      // ignore
-    }
+    const filePaths = [
+      './.esdoc.json',
+      './.esdoc.js'
+    ];
 
-    try {
-      const filePath = path.resolve('./.esdoc.js');
-      fs.readFileSync(filePath);
-      return filePath;
-    } catch (e) {
-      // ignore
+    for (const filePath of filePaths) {
+      const resolvedPath = path.resolve(filePath);
+      if (fs.existsSync(resolvedPath)) {
+        return resolvedPath;
+      }
     }
 
     return null;
