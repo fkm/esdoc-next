@@ -16,7 +16,6 @@ Please <a href="https://try.esdoc.org">try it out</a>!
 - Integrates test codes into documentation.
 - Integrates manual into documentation.
 - Parses ECMAScript proposals.
-- [ESDoc Hosting Service](https://doc.esdoc.org)
 
 # Users
 - [ESDoc](https://doc.esdoc.org/github.com/esdoc/esdoc/) (self-hosting &#x1F604;)
